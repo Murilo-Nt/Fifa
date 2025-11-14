@@ -1,0 +1,67 @@
+/* 🔹 Imagem de fundo ocupando toda a tela */
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 🔹 Barra superior colada no topo */
+.top-bar {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to right, #000, #fff);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* 🔹 Logo */
+.logo {
+    height: 65px;
+}
+
+/* 🔹 Conteúdo */
+.content {
+    color: white;
+    padding: 150px 40px 40px 40px; /* empurra pra baixo da barra */
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    text-shadow: 2px 2px 6px #000;
+}
+
+/* 🔹 Descrição */
+.descricao {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* 🔹 Botão Comprar */
+.buy-btn {
+    background-color: #00ff87; /* verde estilo EA FC */
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff8780;
+}
+
+.buy-btn:hover {
+    background-color: #00e676;
+    box-shadow: 0 0 18px #00ff88;
+    transform: scale(1.05);
+}
